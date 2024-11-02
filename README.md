@@ -1,7 +1,5 @@
 # TaskFlow 📋
 
-# TaskFlow 📋
-
 TaskFlow is a personal task management app designed to help users organize 🗂️, prioritize ⭐, and track 🕒 their daily tasks and goals with ease. This app offers an intuitive way to create ✍️, update 🔄, and manage tasks through a clean, streamlined interface. ✨
 
 
