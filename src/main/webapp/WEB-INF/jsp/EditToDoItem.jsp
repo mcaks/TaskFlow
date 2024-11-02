@@ -109,7 +109,7 @@
         <form:input path="id" type="hidden"/>
 
         <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
+            <label for="title" class="form-label">Task Name</label>
             <form:input type="text" path="title" id="title" class="form-control" required="required"/>
         </div>
 

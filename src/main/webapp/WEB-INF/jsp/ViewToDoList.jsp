@@ -121,7 +121,7 @@
     <form:form>
         <table class="table table-bordered text-center">
             <tr>
-                <th class="text-center">Title</th>
+                <th class="text-center">Task Name</th>
                 <th class="text-center">Date</th>
                 <th class="text-center">Time</th> <!-- Add Time Column Header -->
                 <th class="text-center">Status</th>
