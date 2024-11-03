@@ -31,7 +31,7 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 
 - **Backend:** Java Spring Boot
 - **Frontend:** JSP, HTML, CSS
-- **Database:** MySQL (for local development)
+- **Database:** MySQL 
 - **Build Tool:** Maven
 
 ## Project Structure 📂
