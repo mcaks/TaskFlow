@@ -2,6 +2,19 @@
 
 TaskFlow is a personal task management app designed to help users organize 🗂️, prioritize ⭐, and track 🕒 their daily tasks and goals with ease. This app offers an intuitive way to create ✍️, update 🔄, and manage tasks through a clean, streamlined interface. ✨
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Technology Stack](#technology-stack)
+4. [Setup and Usage](#setup-and-usage)
+   - [Local Setup](#local-setup)
+   - [User Guide](#user-guide)
+5. [Project Structure](#project-structure)
+6. [Installation Instructions](#installation-instructions)
+7. [Contribution Guidelines](#contribution-guidelines)
+9. [Glossary](#besednjak-glossary)
+
 
 ## Features ✨
 
@@ -13,6 +26,13 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 ### Task Status Tracking:
 - Track tasks across three main statuses: To-Do, Doing, and Done.
 - Easily change statuses to reflect real-time progress.
+
+## Technology Stack 🛠️
+
+- **Backend:** Java Spring Boot
+- **Frontend:** JSP, HTML, CSS
+- **Database:** MySQL (for local development)
+- **Build Tool:** Maven
 
 ## Project Structure 📂
 
@@ -77,14 +97,9 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
    ```
 5. Create a Pull Request: Describe your changes and link relevant issues for review.
 
-## Tech Stack 🛠️
+   
 
-- **Backend:** Java Spring Boot
-- **Frontend:** JSP, HTML, CSS
-- **Database:** MySQL (for local development)
-- **Build Tool:** Maven
-
-## Besednjak (Glossary) 📖
+## Glossary 📖
 
 - **Task:** A single unit of work that needs to be completed. It includes a title, due date, and status.
 - **Status:** The current state of a task, which can be one of the following:
