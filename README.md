@@ -54,7 +54,7 @@ pom.xml: Maven file for dependencies.
 
 For a step-by-step guide on installing and setting up TaskFlow on your local machine, follow the link below:
 
-👉 TaskFlow Installation Instructions
+👉 [TaskFlow Installation Instructions](https://cloudy-tern-837.notion.site/TaskFlow-Installation-Instructions-1497a2b34d76401bbe200d9a805740f7?pvs=4)
 
 ## Contribution Guidelines 🤝
 
