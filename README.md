@@ -13,7 +13,8 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 5. [Project Structure](#project-structure)
 6. [Installation Instructions](#installation-instructions)
 7. [Contribution Guidelines](#contribution-guidelines)
-9. [Glossary](#Glossary)
+9. [Glossary](#Glossary
+10. [Visual Documentation Section](#visual-documentation-section)
 
 
 ## Features ✨
@@ -96,3 +97,5 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
 - **Model:** Represents the data structure of the application, defining how data is organized and managed.
 - **JSP (JavaServer Pages):** A technology used for developing web pages that support dynamic content, allowing for the integration of Java code within HTML.
 - **Maven:** A build automation tool used primarily for Java projects, managing project dependencies and build processes.
+
+## Visual Documentation Section
