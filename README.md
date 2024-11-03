@@ -13,7 +13,7 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 5. [Project Structure](#project-structure)
 6. [Installation Instructions](#installation-instructions)
 7. [Contribution Guidelines](#contribution-guidelines)
-9. [Glossary](#besednjak-glossary)
+9. [Glossary](#Glossary)
 
 
 ## Features ✨
