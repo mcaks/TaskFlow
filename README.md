@@ -79,10 +79,18 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
 ## Glossary 📖
 
 - **Task:** A single unit of work that needs to be completed. It includes a title, due date, and status.
+- **Task Name:** The title or label of a task, providing a brief summary of the task’s purpose or objective.
+- **Date:** The specific day on which the task is due to be completed.
+- **Time:** The exact hour and minute by which the task should be completed.
 - **Status:** The current state of a task, which can be one of the following:
   - **To-Do:** The task has been created but not yet started.
   - **Doing:** The task is currently in progress.
   - **Done:** The task has been completed.
+- **Filter by Status:** A feature allowing users to filter tasks based on their current status (e.g., To-Do, Doing, Done) to better manage and view task progress.
+- **Mark Complete:** An action that updates a task’s status to "Done," indicating it has been completed.
+- **Edit Task:** An option to modify an existing task, allowing updates to task details such as name, date, time, and status.
+- **Delete Task:** An option to remove a task permanently from the task list.
+- **Task List View:** A display or table showing tasks in a structured layout with columns such as Task Name, Date, Time, Status, and action buttons like Edit, Delete, and Mark Complete.
 - **Controller:** A component that handles incoming HTTP requests, processes them, and returns the appropriate response.
 - **Service:** A component that contains the business logic of the application, often called by the controller to perform operations on data.
 - **Model:** Represents the data structure of the application, defining how data is organized and managed.
