@@ -52,32 +52,9 @@ pom.xml: Maven file for dependencies.
 
 ## Installation Instructions 🚀
 
-To install and run TaskFlow locally:
+For a step-by-step guide on installing and setting up TaskFlow on your local machine, follow the link below:
 
-### Clone the Repository:
-```bash
-git clone <repository-url>
-cd TaskFlow
-```
-
-### Environment Setup:
-Ensure Java 11+ and Maven are installed on your machine.
-
-### Install Dependencies:
-```bash
-mvn clean install
-```
-
-### Configure Database:
-Set up a MySQL database and update the database configuration in `src/main/resources/application.properties`.
-
-### Run the Application:
-```bash
-mvn spring-boot:run
-```
-
-### Access TaskFlow:
-Open your browser and go to [http://localhost:8080](http://localhost:8080).
+👉 TaskFlow Installation Instructions
 
 ## Contribution Guidelines 🤝
 
