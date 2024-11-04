@@ -17,7 +17,7 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 10. [Visual Documentation Section](#visual-documentation-section)
 
 
-## Features ✨
+## Features 
 
 - Task Management 📝 - Easily add tasks with customizable titles, due dates, and priorities.
 - Progress Tracking 📈 - Track tasks across statuses: To-Do, Doing, and Done.
