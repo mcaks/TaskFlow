@@ -8,10 +8,9 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 2. [Features](#features)
 3. [Technology Stack](#technology-stack)
 4. [Setup and Usage](#setup-and-usage)
-   - [Local Setup](#local-setup)
+   - [Installation Instructions](#installation-instructions)
    - [User Guide](#user-guide)
 5. [Project Structure](#project-structure)
-6. [Installation Instructions](#installation-instructions)
 7. [Contribution Guidelines](#contribution-guidelines)
 9. [Glossary](#Glossary)
 10. [Visual Documentation Section](#visual-documentation-section)
@@ -48,8 +47,8 @@ src/main/resources: Contains resources like configuration files and templates.
 target: Compiled application files.
 pom.xml: Maven file for dependencies.
 ```
-
-## Installation Instructions 🚀
+## Setup and Usage
+### Installation Instructions 🚀
 
 For a step-by-step guide on installing and setting up TaskFlow on your local machine, follow our Notion documentation in the link below:
 
@@ -72,6 +71,8 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
    git push origin feature/<feature-name>
    ```
 5. Create a Pull Request: Describe your changes and link relevant issues for review.
+
+### User Guide
 
    
 
