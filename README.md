@@ -98,4 +98,4 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
 - **JSP (JavaServer Pages):** A technology used for developing web pages that support dynamic content, allowing for the integration of Java code within HTML.
 - **Maven:** A build automation tool used primarily for Java projects, managing project dependencies and build processes.
 
-## Visual Documentation Section
+## Visual Documentation Section 🗂️
