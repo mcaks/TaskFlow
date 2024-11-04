@@ -5,7 +5,7 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Features](#features✨)
+2. [Features](#features)
 3. [Technology Stack](#technology-stack)
 4. [Setup and Usage](#setup-and-usage)
    - [Local Setup](#local-setup)
