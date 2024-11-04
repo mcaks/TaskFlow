@@ -13,7 +13,7 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 5. [Project Structure](#project-structure)
 6. [Installation Instructions](#installation-instructions)
 7. [Contribution Guidelines](#contribution-guidelines)
-9. [Glossary](#Glossary
+9. [Glossary](#Glossary)
 10. [Visual Documentation Section](#visual-documentation-section)
 
 
@@ -79,7 +79,7 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
 
 ## Glossary 📖
 
-- **Task:** A single unit of work that needs to be completed. It includes a title, due date, and status.
+- **Task:** A single unit of work that needs to be completed. It includes a title, due date, due time and status.
 - **Task Name:** The title or label of a task, providing a brief summary of the task’s purpose or objective.
 - **Date:** The specific day on which the task is due to be completed.
 - **Time:** The exact hour and minute by which the task should be completed.
