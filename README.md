@@ -98,3 +98,4 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
 - **Maven:** A build automation tool used primarily for Java projects, managing project dependencies and build processes.
 
 ## Visual Documentation Section 🗂️
+![image](https://github.com/user-attachments/assets/66075bb3-bf36-477d-93bd-9d73ac9f24b7)
