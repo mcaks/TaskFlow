@@ -55,7 +55,9 @@ For a step-by-step guide on installing and setting up TaskFlow on your local mac
 👉 [TaskFlow Installation Instructions](https://cloudy-tern-837.notion.site/TaskFlow-Installation-Instructions-1497a2b34d76401bbe200d9a805740f7?pvs=4) 👈
 
 ### User Guide
+For a comprehensive overview of TaskFlow's features, watch our user guide video:
 
+[Watch the User Guide Video](https://www.loom.com/share/521e42802e7946199abe5e180d242e00?sid=b071e22e-8ec9-469d-b4f0-66fdd71cd202)
 ## Contribution Guidelines 🤝
 
 We welcome contributions to improve TaskFlow! Here’s how you can get started:
