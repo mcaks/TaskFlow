@@ -1,7 +1,7 @@
 # TaskFlow 📋
 
 
-<img width="900" alt="TaskFlowMockUP2" src="https://github.com/user-attachments/assets/0b26c2f1-c54f-4d0f-981b-7bf62323932f">
+<img width="1300" alt="TaskFlowMockUP2" src="https://github.com/user-attachments/assets/0b26c2f1-c54f-4d0f-981b-7bf62323932f">
 
 
 
