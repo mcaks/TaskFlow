@@ -1,7 +1,8 @@
 # TaskFlow 📋
 
 
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/254af2da-2ce8-4ab0-9453-7b6aece0fa45">
+<img  alt="image" src="https://github.com/user-attachments/assets/7ab8b2b5-6638-4dd0-89ab-20a327412f14">
+
 
 
 
