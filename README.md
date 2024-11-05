@@ -47,12 +47,14 @@ src/main/resources: Contains resources like configuration files and templates.
 target: Compiled application files.
 pom.xml: Maven file for dependencies.
 ```
-## Setup and Usage
-### Installation Instructions 🚀
+## Setup and Usage 🚀
+### Installation Instructions 
 
 For a step-by-step guide on installing and setting up TaskFlow on your local machine, follow our Notion documentation in the link below:
 
 👉 [TaskFlow Installation Instructions](https://cloudy-tern-837.notion.site/TaskFlow-Installation-Instructions-1497a2b34d76401bbe200d9a805740f7?pvs=4) 👈
+
+### User Guide
 
 ## Contribution Guidelines 🤝
 
@@ -71,8 +73,6 @@ We welcome contributions to improve TaskFlow! Here’s how you can get started:
    git push origin feature/<feature-name>
    ```
 5. Create a Pull Request: Describe your changes and link relevant issues for review.
-
-### User Guide
 
    
 
