@@ -1,7 +1,8 @@
 # TaskFlow 📋
 
 
-![image](https://github.com/user-attachments/assets/bdb2b385-fdf7-46f7-9ec2-956b5f9155ef)
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/254af2da-2ce8-4ab0-9453-7b6aece0fa45">
+
 
 
 TaskFlow is a personal task management app designed to help users organize 🗂️, prioritize ⭐, and track 🕒 their daily tasks and goals with ease. This app offers an intuitive way to create ✍️, update 🔄, and manage tasks through a clean, streamlined interface. ✨
