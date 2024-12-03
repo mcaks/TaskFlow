@@ -3,11 +3,11 @@ package com.example.ToDo_App;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ToDoAppApplicationTests {
+@SpringBootTest(properties = "spring.profiles.active=test")
+public class ToDoAppApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Proverava da li se ApplicationContext uspešno podiže
 	}
-
 }

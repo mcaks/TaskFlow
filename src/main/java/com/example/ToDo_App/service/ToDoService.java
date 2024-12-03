@@ -72,7 +72,7 @@ public class ToDoService {
     // Send email notification for completed task
     private void sendCompletionEmail(ToDo todo) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo("+++@++++"); // Use the recipient's email address here + dont
+        message.setTo("*****@gmail.com"); // Use the recipient's email address here + dont
         // forget to change senders email + password in application.properties
 
         /* IMPORTANT
