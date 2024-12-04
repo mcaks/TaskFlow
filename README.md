@@ -15,10 +15,11 @@ TaskFlow is a personal task management app designed to help users organize 🗂�
 2. [Features](#features)
 3. [Technology Stack](#technology-stack)
 5. [Project Structure](#project-structure)
-5. [Setup and Usage](#setup-and-usage)
+6. [Setup and Usage](#setup-and-usage)
    - [Installation Instructions](#installation-instructions)
    - [User Guide](#user-guide)
-7. [Contribution Guidelines](#contribution-guidelines)
+7. [Project Structure](#project-structure)
+8. [Testing](#testing)
 9. [Glossary](#Glossary)
 10. [Visual Documentation Section](#visual-documentation-section)
 
@@ -64,6 +65,11 @@ For a step-by-step guide on installing and setting up TaskFlow on your local mac
 ### User Guide
 
 👉[Watch the User Guide Video](https://www.loom.com/share/521e42802e7946199abe5e180d242e00?sid=b071e22e-8ec9-469d-b4f0-66fdd71cd202)👈
+
+## Testing 🧪
+
+The docs folder contains a report of all the tests carried out.
+
 ## Contribution Guidelines 🤝
 
 We welcome contributions to improve TaskFlow! Here’s how you can get started:
