@@ -6,9 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+import java.time.Duration;
+import java.time.LocalDateTime;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
 
 @Service
 public class ToDoService {
@@ -36,15 +40,18 @@ public class ToDoService {
         ToDo todo = getToDoItemById(id);
         if (todo == null) return false;
 
+      
+
         todo.setStatus("Done");
         boolean isUpdated = saveOrUpdateToDoItem(todo);
 
         if (isUpdated) {
-            sendCompletionEmail(todo);
+           // sendCompletionEmail(todo);
         }
 
         return isUpdated;
     }
+
 
     // Save or update a ToDo item
     public boolean saveOrUpdateToDoItem(ToDo todo) {
@@ -95,4 +102,20 @@ public class ToDoService {
         );
         mailSender.send(message);
     }
+
+    // Calculate number of tasks by status
+    public long getTaskCountByStatus(String status) {
+        return repo.findByStatus(status).size();
+    }
+
+    // Calculate total number of tasks
+    public long getTotalTaskCount() {
+        return repo.count();
+    }
+
+
+
+
+
+
 }

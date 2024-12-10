@@ -107,16 +107,23 @@
     <h1 class="p-3">ToDo Board</h1>
 
     <!-- Filter by Status Form -->
-    <form method="get" action="viewToDoList" class="form-inline mb-3">
-        <label for="status" class="mr-2">Filter by Status:</label>
-        <select class="form-control mr-2" name="status" id="status">
-            <option value="All" ${selectedStatus == 'All' ? 'selected' : ''}>All</option>
-            <option value="Todo" ${selectedStatus == 'Todo' ? 'selected' : ''}>Todo</option>
-            <option value="Doing" ${selectedStatus == 'Doing' ? 'selected' : ''}>Doing</option>
-            <option value="Done" ${selectedStatus == 'Done' ? 'selected' : ''}>Done</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Filter</button>
-    </form>
+    <div class="d-flex justify-content-between mb-3">
+        <!-- Leva stran: Filter -->
+        <form method="get" action="viewToDoList" class="form-inline">
+            <label for="status" class="mr-2">Filter by status:</label>
+            <select class="form-control mr-2" name="status" id="status">
+                <option value="All" ${selectedStatus == 'All' ? 'selected' : ''}>All</option>
+                <option value="Todo" ${selectedStatus == 'Todo' ? 'selected' : ''}>ToDo</option>
+                <option value="Doing" ${selectedStatus == 'Doing' ? 'selected' : ''}>Doing</option>
+                <option value="Done" ${selectedStatus == 'Done' ? 'selected' : ''}>Done</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </form>
+
+        <!-- Desna stran: Gumb za poro?ila -->
+        <a href="/reports" class="btn btn-info">Reports</a>
+    </div>
+
 
     <form:form>
         <table class="table table-bordered text-center">

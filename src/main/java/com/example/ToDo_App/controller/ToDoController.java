@@ -8,6 +8,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
+import java.util.Map;
+
 @Controller
 public class ToDoController {
 
@@ -81,4 +84,23 @@ public class ToDoController {
         redirectAttributes.addFlashAttribute("message", "Delete Failure");
         return "redirect:/viewToDoList";
     }
+
+    //reports
+    @GetMapping("/reports")
+    public String viewReports(Model model) {
+        long todoCount = service.getTaskCountByStatus("ToDo");
+        long doingCount = service.getTaskCountByStatus("Doing");
+        long doneCount = service.getTaskCountByStatus("Done");
+        long totalCount = service.getTotalTaskCount();
+
+
+        model.addAttribute("todoCount", todoCount);
+        model.addAttribute("doingCount", doingCount);
+        model.addAttribute("doneCount", doneCount);
+        model.addAttribute("totalCount", totalCount);
+
+
+        return "Reports";
+    }
+
 }
