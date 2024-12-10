@@ -2,6 +2,7 @@ package com.example.ToDo_App.service;
 
 import com.example.ToDo_App.model.ToDo;
 import com.example.ToDo_App.repo.IToDoRepo;
+import jakarta.persistence.Column;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -39,14 +40,17 @@ public class ToDoService {
     public boolean updateStatus(Long id) {
         ToDo todo = getToDoItemById(id);
         if (todo == null) return false;
-
-      
+        if ("Doing".equals(todo.getStatus())) {
+            todo.setDoneTime(new Date()); // Record the time when the task is done
+        } else if ("ToDo".equals(todo.getStatus())) {
+            todo.setDoingStartTime(new Date()); // Record the time when the task starts "Doing"
+        }
 
         todo.setStatus("Done");
         boolean isUpdated = saveOrUpdateToDoItem(todo);
 
         if (isUpdated) {
-           // sendCompletionEmail(todo);
+            // sendCompletionEmail(todo);
         }
 
         return isUpdated;
@@ -113,9 +117,30 @@ public class ToDoService {
         return repo.count();
     }
 
+    //reports
+    @Column
+    private Date doingStartTime;
 
+    @Column
+    private Date doneTime;
+    public double calculateAverageDoingTime() {
+        List<ToDo> doingTasks = repo.findByStatus("Doing");
+        if (doingTasks.isEmpty()) return 0;
 
+        return doingTasks.stream()
+                .mapToLong(task -> Duration.between(task.getTime(), LocalTime.now()).toMinutes())
+                .average()
+                .orElse(0.0);
+    }
 
+    // Calculate percentage of "Done" tasks
+    public double calculateDoneTaskPercentage() {
+        long totalTasks = getTotalTaskCount();
+        long doneTasks = getTaskCountByStatus("Done");
 
+        if (totalTasks == 0) return 0;
 
+        return (doneTasks * 100.0) / totalTasks;
+    }
 }
+

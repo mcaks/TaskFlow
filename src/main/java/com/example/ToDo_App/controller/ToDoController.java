@@ -92,15 +92,18 @@ public class ToDoController {
         long doingCount = service.getTaskCountByStatus("Doing");
         long doneCount = service.getTaskCountByStatus("Done");
         long totalCount = service.getTotalTaskCount();
+        double averageDoingTime = service.calculateAverageDoingTime();
+        double completionPercentage = service.calculateDoneTaskPercentage();
 
 
         model.addAttribute("todoCount", todoCount);
         model.addAttribute("doingCount", doingCount);
         model.addAttribute("doneCount", doneCount);
         model.addAttribute("totalCount", totalCount);
+        model.addAttribute("averageDoingTime", averageDoingTime);
+        model.addAttribute("completionPercentage", completionPercentage);
 
 
         return "Reports";
     }
-
 }

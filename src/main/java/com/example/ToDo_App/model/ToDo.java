@@ -84,6 +84,27 @@ public class ToDo {
         this.status = status;
     }
 
+    //reports
+    @Column
+    private Date doingStartTime;
 
+    @Column
+    private Date doneTime;
+
+    public Date getDoingStartTime() {
+        return doingStartTime;
+    }
+
+    public void setDoingStartTime(Date doingStartTime) {
+        this.doingStartTime = doingStartTime;
+    }
+
+    public Date getDoneTime() {
+        return doneTime;
+    }
+
+    public void setDoneTime(Date doneTime) {
+        this.doneTime = doneTime;
+    }
 
 }
