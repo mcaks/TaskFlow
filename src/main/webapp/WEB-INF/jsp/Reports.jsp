@@ -52,6 +52,23 @@
                     </div>
                 </div>
                 <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 14px; color: black; text-align: left;">Number of Done Tasks</h5>
+                            <p class="card-text"  style="font-size: 30px; color: #28a745; text-align: center;">${doneCount}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 14px; color: black; text-align: left;">Total Number of Tasks</h5>
+                            <p class="card-text" style="font-size: 30px; color: #28a745; text-align: center;">${totalCount}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
                     <div class="card mt-3">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 14px; color: black; text-align: left;">Average Time on Doing Tasks</h5>
@@ -69,7 +86,50 @@
                 </div>
             </div>
         </div>
+    </div> <!-- Pie Chart Section -->
+    <br>  <br>  <br>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h5 class="text-center">Task Progress Overview</h5><br>
+            <canvas id="taskPieChart"></canvas>
+        </div>
+    </div>
+    <br><br>
+    <!-- Back to Task List Button -->
+    <div class="text-center mt-4">
+        <a href="/viewToDoList" class="btn btn-primary">Back to Task List</a>
     </div>
 </div>
+
+<script>
+    // Data for the Pie Chart
+    var pieData = {
+        labels: ['ToDo', 'Doing', 'Done'],
+        datasets: [{
+            data: [${todoCount}, ${doingCount}, ${doneCount}],
+            backgroundColor: ['#dcdada', '#ffca28', '#28a745'],
+            hoverBackgroundColor: ['#c7c5c5', '#9B9B19FF', '#006400FF']
+        }]
+    };
+
+    // Config and Render the Pie Chart
+    var ctx = document.getElementById('taskPieChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: pieData,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    enabled: true
+                }
+            }
+        }
+    });
+</script>
 </body>
 </html>
