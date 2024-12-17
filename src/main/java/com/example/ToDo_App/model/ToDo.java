@@ -107,4 +107,29 @@ public class ToDo {
         this.doneTime = doneTime;
     }
 
+
+
+    @Column
+    private String repeatFrequency; // Options like "Daily", "Weekly", "Monthly", etc.
+
+    @Column
+    private Date nextDueDate;
+
+    public String getRepeatFrequency() {
+        return repeatFrequency;
+    }
+
+    public void setRepeatFrequency(String repeatFrequency) {
+        this.repeatFrequency = repeatFrequency;
+    }
+
+    public Date getNextDueDate() {
+        return nextDueDate;
+    }
+
+    public void setNextDueDate(Date nextDueDate) {
+        this.nextDueDate = nextDueDate;
+    }
+
+
 }
