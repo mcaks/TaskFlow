@@ -1,18 +1,11 @@
 package com.example.ToDo_App.model;
 
-import java.time.temporal.Temporal;
-import java.util.Date;
-
+import jakarta.annotation.Nonnull;
+import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import jakarta.annotation.Nonnull;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import java.time.LocalTime;
+import java.util.Date;
 
 @Entity
 @Table (name="todo")
