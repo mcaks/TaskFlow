@@ -105,6 +105,7 @@
 
 <div class="container">
     <h1 class="p-3">ToDo Board</h1>
+    <br>
 
     <!-- Filter by Status Form -->
     <div class="d-flex justify-content-between mb-3">
@@ -117,7 +118,12 @@
                 <option value="Doing" ${selectedStatus == 'Doing' ? 'selected' : ''}>Doing</option>
                 <option value="Done" ${selectedStatus == 'Done' ? 'selected' : ''}>Done</option>
             </select>
-            <button type="submit" class="btn btn-primary">Filter</button>
+
+            <label class="mr-2 ml-3" for="repeatable">Repeatable Tasks Only:</label>
+            <input type="checkbox" name="repeatable" id="repeatable"
+            ${repeatable ? 'checked' : ''} />
+
+            <button type="submit" class="btn btn-primary ml-2">Filter</button>
         </form>
 
         <!-- Desna stran: Gumb za poro?ila -->
@@ -130,7 +136,8 @@
             <tr>
                 <th class="text-center">Task Name</th>
                 <th class="text-center">Date</th>
-                <th class="text-center">Time</th> <!-- Add Time Column Header -->
+                <th class="text-center">Time</th>
+                <th class="text-center">Repeat</th>
                 <th class="text-center">Status</th>
                 <th class="text-center">Mark Complete</th>
                 <th class="text-center">Edit</th>
@@ -143,7 +150,7 @@
                         <fmt:formatDate value="${todo.date}" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center">${todo.time}</td> <!-- Display Time -->
-
+                    <td class="text-center">${todo.repeatFrequency}</td>
                     <td class="text-center">
                         <span class="status
                             <c:choose>

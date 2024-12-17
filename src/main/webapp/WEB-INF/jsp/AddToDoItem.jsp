@@ -119,6 +119,18 @@
             <form:input type="time" path="time" id="time" class="form-control" required="required"/>
         </div>
 
+        <div class="form-group">
+            <label for="repeatFrequency" class="form-label">Repeat Frequency</label>
+            <select id="repeatFrequency" name="repeatFrequency" class="form-control">
+                <option value="/">None</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+        </div>
+
+
         <div class="mb-3">
             <label class="form-label">Status</label>
             <div>

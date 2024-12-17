@@ -89,6 +89,7 @@
         .status-btn[data-status="Doing"].selected {
             background-color: #ffca28;
         }
+
         .status-btn[data-status="Done"].selected {
             background-color: #28a745;
         }
@@ -96,9 +97,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.min.js"></script>
-
 </head>
 
 <body>
@@ -106,6 +104,7 @@
     <h1 class="p-3">Edit ToDo Item</h1>
 
     <form:form action="/editSaveToDoItem" method="post" modelAttribute="todo">
+        <!-- Hidden field for ToDo ID -->
         <form:input path="id" type="hidden"/>
 
         <div class="mb-3">
@@ -121,6 +120,18 @@
         <div class="mb-3">
             <label for="time" class="form-label">Time</label>
             <form:input type="time" path="time" id="time" class="form-control" required="required"/>
+        </div>
+
+        <!-- Repeat Frequency -->
+        <div class="form-group">
+            <label for="repeatFrequency" class="form-label">Repeat Frequency</label>
+            <select id="repeatFrequency" name="repeatFrequency" class="form-control">
+                <option value="None" <c:if test="${todo.repeatFrequency == '/'}">selected</c:if>>None</option>
+                <option value="Daily" <c:if test="${todo.repeatFrequency == 'Daily'}">selected</c:if>>Daily</option>
+                <option value="Weekly" <c:if test="${todo.repeatFrequency == 'Weekly'}">selected</c:if>>Weekly</option>
+                <option value="Monthly" <c:if test="${todo.repeatFrequency == 'Monthly'}">selected</c:if>>Monthly</option>
+                <option value="Monthly" <c:if test="${todo.repeatFrequency == 'Yearly'}">selected</c:if>>Yearly</option>
+            </select>
         </div>
 
         <div class="mb-3">
@@ -139,6 +150,7 @@
         </div>
     </form:form>
 </div>
+
 <script>
     $(document).ready(function () {
         // Pre-select the current status based on the hidden input value
@@ -170,6 +182,4 @@
     });
 </script>
 </body>
-
 </html>
-

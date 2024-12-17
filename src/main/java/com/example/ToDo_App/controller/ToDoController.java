@@ -19,13 +19,24 @@ public class ToDoController {
 
     // View all ToDo items (filtered by status)
     @GetMapping({"/", "/viewToDoList"})
-    public String viewAllToDoItems(@RequestParam(value = "status", required = false, defaultValue = "All") String status,
-                                   Model model, @ModelAttribute("message") String message) {
-        model.addAttribute("list", service.getToDoItemsByStatus(status));
+    public String viewAllToDoItems(
+            @RequestParam(value = "status", required = false, defaultValue = "All") String status,
+            @RequestParam(value = "repeatable", required = false, defaultValue = "false") boolean repeatable,
+            Model model,
+            @ModelAttribute("message") String message) {
+
+        List<ToDo> tasks = repeatable
+                ? service.getRepeatableTasks(status)
+                : service.getToDoItemsByStatus(status);
+
+        model.addAttribute("list", tasks);
         model.addAttribute("message", message);
         model.addAttribute("selectedStatus", status);
+        model.addAttribute("repeatable", repeatable);
+
         return "ViewToDoList";
     }
+
 
     // Mark the task as complete (update status to "Done")
     @GetMapping("/updateToDoStatus/{id}")
