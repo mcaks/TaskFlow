@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ '17', '21' ]   # koristi JDK 17 i 21
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+
+      - name: Run tests
+        run: mvn -B -U test
+
+      # (opciono) prikupi JUnit/JaCoCo ako postoji
+      - name: Collect reports (Surefire + JaCoCo)
+        if: always()
+        run: |
+          mkdir -p artifacts
+          if [ -d target/surefire-reports ]; then cp -r target/surefire-reports artifacts/surefire-reports; fi
+          if [ -d target/failsafe-reports ]; then cp -r target/failsafe-reports artifacts/failsafe-reports; fi
+          if [ -d target/site/jacoco ]; then cp -r target/site/jacoco artifacts/jacoco; fi
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports-java-${{ matrix.java }}
+          path: artifacts
